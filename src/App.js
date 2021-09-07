@@ -1,21 +1,32 @@
-import HeaderFunction from "./Header/Header";
-import HeaderClass from "./Header/HeaderClass";
+import UserDetails from "./Header/UserDetails";
+const userData = {
+  firstname: "Jeevanath",
+  lastname: "Gopalakrishnan",
+  avator: "https://placekitten.com/g/150/150",
+  date: new Date(),
+};
+
+const formatName = (person) => {
+  return (
+    <p>
+      {person.firstname} {person.lastname}
+    </p>
+  );
+};
+const formatDate = (date) => {
+  return date.toLocaleDateString();
+};
+
 function App() {
-  const compoentData = {
-    functionComp: "Functional Component",
-    classComp: "Class Component",
-  };
   return (
     <>
       <h1>React Concepts</h1>
-      <ol>
-        <li>
-          <HeaderFunction functionComp={compoentData.functionComp} />
-        </li>
-        <li>
-          <HeaderClass classComp={compoentData.classComp} />
-        </li>
-      </ol>
+      <UserDetails
+        name={formatName(userData)}
+        avator={userData.avator}
+        date={formatDate(userData.date)}
+      />
+      <hr />
     </>
   );
 }
