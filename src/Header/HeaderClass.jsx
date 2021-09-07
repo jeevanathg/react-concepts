@@ -1,9 +1,6 @@
 import { Component } from "react";
 
 class HeaderClass extends Component {
-  //   constructor(props) {
-  //     super(props);
-  //   }
   render() {
     return (
       <p>
