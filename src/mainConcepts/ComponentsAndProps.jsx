@@ -3,7 +3,8 @@ const UserDetails = (props) => {
 
   return (
     <div className="comments">
-      <h3>Comments:</h3>
+      <hr />
+      <h3>3. Components and Props: User Details</h3>
       <img src={props.avator} alt="Placeholder" />
       <p>{props.name}</p>
       <p>{props.date}</p>
