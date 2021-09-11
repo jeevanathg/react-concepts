@@ -1,4 +1,6 @@
-import UserDetails from "./Header/UserDetails";
+import Clock from "./mainConcepts/StateAndProps";
+import UserDetails from "./mainConcepts/ComponentsAndProps";
+
 const userData = {
   firstname: "Jeevanath",
   lastname: "Gopalakrishnan",
@@ -21,6 +23,7 @@ function App() {
   return (
     <>
       <h1>React Concepts</h1>
+      <Clock />
       <UserDetails
         name={formatName(userData)}
         avator={userData.avator}
