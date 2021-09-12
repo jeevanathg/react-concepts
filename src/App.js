@@ -1,5 +1,5 @@
-import Clock from "./mainConcepts/StateAndProps";
 import UserDetails from "./mainConcepts/ComponentsAndProps";
+import HandlingEvents from "./mainConcepts/HandlingEvents";
 
 const userData = {
   firstname: "Jeevanath",
@@ -23,12 +23,13 @@ function App() {
   return (
     <>
       <h1>React Concepts</h1>
-      <Clock />
+      <HandlingEvents />
       <UserDetails
         name={formatName(userData)}
         avator={userData.avator}
         date={formatDate(userData.date)}
       />
+
       <hr />
     </>
   );
