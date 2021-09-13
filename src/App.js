@@ -2,6 +2,7 @@ import UserDetails from "./mainConcepts/ComponentsAndProps";
 import HandlingEvents from "./mainConcepts/HandlingEvents";
 import ContionalRendering from "./mainConcepts/ConditionalRendering";
 import ListandKeys from "./mainConcepts/ListAndKeys";
+import Forms from "./mainConcepts/Forms";
 
 const userData = {
   firstname: "Jeevanath",
@@ -25,6 +26,7 @@ function App() {
   return (
     <>
       <h1>React Concepts</h1>
+      <Forms />
       <ListandKeys />
       <ContionalRendering />
       <HandlingEvents />
