@@ -6,7 +6,6 @@ class Clock extends Component {
       date: new Date(),
       clockButtonName: "Start Clock",
     };
-    console.log("constructor.props.toggleClock", { props });
   }
   componentDidMount() {
     this.timerID = setInterval(() => this.tick(), [1000]);
@@ -38,7 +37,7 @@ class Clock extends Component {
     return (
       <div>
         <hr />
-        <h3>4.State and LifeCycle: Clock Example</h3>
+        <h3>5.State and LifeCycle: Clock Example</h3>
         <p>{this.state.date.toLocaleTimeString()}</p>
         <button onClick={() => this.toggleClock()}>
           {this.state.clockButtonName}

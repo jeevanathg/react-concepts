@@ -1,5 +1,6 @@
 import UserDetails from "./mainConcepts/ComponentsAndProps";
 import HandlingEvents from "./mainConcepts/HandlingEvents";
+import ContionalRendering from "./mainConcepts/ConditionalRendering";
 
 const userData = {
   firstname: "Jeevanath",
@@ -23,6 +24,7 @@ function App() {
   return (
     <>
       <h1>React Concepts</h1>
+      <ContionalRendering />
       <HandlingEvents />
       <UserDetails
         name={formatName(userData)}
