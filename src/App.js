@@ -4,6 +4,7 @@ import ContionalRendering from "./mainConcepts/ConditionalRendering";
 import ListandKeys from "./mainConcepts/ListAndKeys";
 import Forms from "./mainConcepts/Forms";
 import LiftingStateUp from "./mainConcepts/LiftingStateUp";
+import CompositionVsInheritence from "./mainConcepts/CompositionVsInheritence";
 
 const userData = {
   firstname: "Jeevanath",
@@ -27,6 +28,7 @@ function App() {
   return (
     <>
       <h1>React Concepts</h1>
+      <CompositionVsInheritence />
       <LiftingStateUp />
       <Forms />
       <ListandKeys />

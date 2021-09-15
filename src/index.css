@@ -16,3 +16,27 @@ label {
   display: inline-block;
   vertical-align: top;
 }
+h4,
+h5 {
+  line-height: 20px;
+  margin: 0;
+  padding: 0 5px;
+}
+
+.fancy {
+  background: #eeeeee;
+  margin-bottom: 10px;
+}
+.fancy-border-blue {
+  border: 1px solid blue;
+}
+.fancy-border-orange {
+  border: 1px solid #ff6600;
+}
+
+.dialog-title {
+  border-bottom: 1px solid #999;
+}
+.dialog-message {
+  padding: 0 5px;
+}

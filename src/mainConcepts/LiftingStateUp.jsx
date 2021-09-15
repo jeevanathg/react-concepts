@@ -88,6 +88,7 @@ class LiftingStateUp extends Component {
       scale === "c" ? tryConvert(temperature, toFarenhit) : temperature;
     return (
       <div>
+        <hr />
         <h3>10. Lifting Components Up</h3>
         <TemperatureInput
           scale="c"
