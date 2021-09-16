@@ -5,6 +5,7 @@ import ListandKeys from "./mainConcepts/ListAndKeys";
 import Forms from "./mainConcepts/Forms";
 import LiftingStateUp from "./mainConcepts/LiftingStateUp";
 import CompositionVsInheritence from "./mainConcepts/CompositionVsInheritence";
+import FilterableProductTable from "./mainConcepts/ThinkingInReact";
 
 const userData = {
   firstname: "Jeevanath",
@@ -28,6 +29,7 @@ function App() {
   return (
     <>
       <h1>React Concepts</h1>
+      <FilterableProductTable />
       <CompositionVsInheritence />
       <LiftingStateUp />
       <Forms />

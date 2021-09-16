@@ -12,7 +12,7 @@ code {
     monospace;
 }
 label {
-  width: 150px;
+  width: 250px;
   display: inline-block;
   vertical-align: top;
 }
@@ -39,4 +39,17 @@ h5 {
 }
 .dialog-message {
   padding: 0 5px;
+}
+
+table,
+td,
+th {
+  border: 1px solid grey;
+  font-size: 0.8em;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
 }
