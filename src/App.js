@@ -1,49 +1,27 @@
-import UserDetails from "./mainConcepts/ComponentsAndProps";
-import HandlingEvents from "./mainConcepts/HandlingEvents";
-import ContionalRendering from "./mainConcepts/ConditionalRendering";
-import ListandKeys from "./mainConcepts/ListAndKeys";
-import Forms from "./mainConcepts/Forms";
-import LiftingStateUp from "./mainConcepts/LiftingStateUp";
-import CompositionVsInheritence from "./mainConcepts/CompositionVsInheritence";
-import FilterableProductTable from "./mainConcepts/ThinkingInReact";
+import React from "react";
+import { BrowserRouter as Router } from "react-router-dom";
 
-const userData = {
-  firstname: "Jeevanath",
-  lastname: "Gopalakrishnan",
-  avator: "https://placekitten.com/g/150/150",
-  date: new Date(),
-};
-
-const formatName = (person) => {
-  return (
-    <p>
-      {person.firstname} {person.lastname}
-    </p>
-  );
-};
-const formatDate = (date) => {
-  return date.toLocaleDateString();
-};
+import Navigation from "./routers/navigation";
+import Routes from "./routers/routes";
 
 function App() {
   return (
-    <>
-      <h1>React Concepts</h1>
-      <FilterableProductTable />
-      <CompositionVsInheritence />
-      <LiftingStateUp />
-      <Forms />
-      <ListandKeys />
-      <ContionalRendering />
-      <HandlingEvents />
-      <UserDetails
-        name={formatName(userData)}
-        avator={userData.avator}
-        date={formatDate(userData.date)}
-      />
+    <div>
+      <header>
+        <h1>React Concepts</h1>
+      </header>
 
-      <hr />
-    </>
+      <Router>
+        <section>
+          <Navigation />
+          <Routes />
+        </section>
+      </Router>
+
+      <footer>
+        <p>Footer</p>
+      </footer>
+    </div>
   );
 }
 
