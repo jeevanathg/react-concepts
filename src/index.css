@@ -33,6 +33,7 @@ nav ul {
   list-style-type: none;
   padding: 0;
 }
+
 /* Style the content */
 article {
   -webkit-flex: 3;
@@ -40,6 +41,9 @@ article {
   flex: 3;
   background-color: #f1f1f1;
   padding: 10px;
+}
+article h3 {
+  border-bottom: 1px solid #ccc;
 }
 /* Styling the Footer */
 footer {

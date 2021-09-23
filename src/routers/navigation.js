@@ -3,30 +3,43 @@ import { Link } from "react-router-dom";
 export default function Navigation() {
   return (
     <nav>
+      <h3>Advanced Guides</h3>
       <ul>
         <li>
-          <Link to="/ComponentsAndProps">Components And Props</Link>
+          <Link to="/advanced-concepts/code-splitting">Code Splitting</Link>
+        </li>
+      </ul>
+      <h3>Main concepts</h3>
+      <ul>
+        <li>
+          <Link to="/main-concepts/components-and-props">
+            Components And Props
+          </Link>
         </li>
         <li>
-          <Link to="/HandlingEvents">Handling Events</Link>
+          <Link to="/main-concepts/handling-events">Handling Events</Link>
         </li>
         <li>
-          <Link to="/ContionalRendering">Contional Rendering</Link>
+          <Link to="/main-concepts/contional-rendering">
+            Contional Rendering
+          </Link>
         </li>
         <li>
-          <Link to="/ListandKeys">List And Keys</Link>
+          <Link to="/main-concepts/list-and-keys">List And Keys</Link>
         </li>
         <li>
-          <Link to="/Forms">Forms</Link>
+          <Link to="/main-concepts/forms">Forms</Link>
         </li>
         <li>
-          <Link to="/LiftingStateUp">Lifting State Up</Link>
+          <Link to="/main-concepts/lifting-state-up">Lifting State Up</Link>
         </li>
         <li>
-          <Link to="/CompositionVsInheritence">Composition Vs Inheritence</Link>
+          <Link to="/main-concepts/composition-vs-inheritence">
+            Composition Vs Inheritence
+          </Link>
         </li>
         <li>
-          <Link to="/ThinkingInReact">Thinking In React</Link>
+          <Link to="/main-concepts/thinking-in-react">Thinking In React</Link>
         </li>
         <li>
           <Link to="/">Main Concepts</Link>

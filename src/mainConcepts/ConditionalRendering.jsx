@@ -39,7 +39,6 @@ class ContionalRendering extends Component {
     const isLoggedIn = this.state.isLoggedIn;
     return (
       <div>
-        <hr />
         <h3>7. Contional Rendering</h3>
         <Greeting isLoggedIn={isLoggedIn} />
         {isLoggedIn ? (

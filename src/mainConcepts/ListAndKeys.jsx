@@ -36,7 +36,6 @@ function ListandKeys(props) {
   ));
   return (
     <div>
-      <hr />
       <h3>8. List and Keys</h3>
       <ul>{listItems}</ul>
       <ol>

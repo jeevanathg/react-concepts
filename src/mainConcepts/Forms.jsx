@@ -41,7 +41,6 @@ class Forms extends Component {
   render() {
     return (
       <div>
-        <hr />
         <h3>9. Forms</h3>
         <form onSubmit={this.handleSubmit}>
           <label htmlFor="username">Name</label>

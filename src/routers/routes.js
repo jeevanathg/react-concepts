@@ -1,7 +1,9 @@
 import { Route, Switch } from "react-router-dom";
+
+import CodeSplitting from "../advancedGuides/CodeSplitting";
+
 import UserDetails from "../mainConcepts/ComponentsAndProps";
 import userData from "../mainConcepts/data/userDetails";
-
 import HandlingEvents from "../mainConcepts/HandlingEvents";
 import ContionalRendering from "../mainConcepts/ConditionalRendering";
 import ListandKeys from "../mainConcepts/ListAndKeys";
@@ -44,28 +46,31 @@ export default function Routes() {
   return (
     <article>
       <Switch>
-        <Route path="/HandlingEvents">
+        <Route path="/advanced-concepts/code-splitting">
+          <CodeSplitting />
+        </Route>
+        <Route path="/main-concepts/handling-events">
           <HandlingEvents />
         </Route>
-        <Route path="/ContionalRendering">
+        <Route path="/main-concepts/contional-rendering">
           <ContionalRendering />
         </Route>
-        <Route path="/ListandKeys">
+        <Route path="/main-concepts/list-and-keys">
           <ListandKeys />
         </Route>
-        <Route path="/Forms">
+        <Route path="/main-concepts/forms">
           <Forms />
         </Route>
-        <Route path="/LiftingStateUp">
+        <Route path="/main-concepts/lifting-state-up">
           <LiftingStateUp />
         </Route>
-        <Route path="/CompositionVsInheritence">
+        <Route path="/main-concepts/composition-vs-inheritence">
           <CompositionVsInheritence />
         </Route>
-        <Route path="/ThinkingInReact">
+        <Route path="/main-concepts/thinking-in-react">
           <FilterableProductTable />
         </Route>
-        <Route path="/ComponentsAndProps">
+        <Route path="/main-concepts/components-and-props">
           <UserDetails
             name={formatName(userData)}
             avator={userData.avator}
