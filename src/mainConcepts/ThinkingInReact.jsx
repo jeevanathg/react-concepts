@@ -27,7 +27,6 @@ class FilterableProductTable extends React.Component {
   render() {
     return (
       <div>
-        <hr />
         <h3>12. Thinking in React</h3>
         <SearchBar
           filterText={this.state.filterText}

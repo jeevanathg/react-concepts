@@ -59,7 +59,6 @@ class SignUpDialog extends Component {
 function CompositionVsInheritence(props) {
   return (
     <div>
-      <hr />
       <h3>11. Compostion Vs Inheritence</h3>
       <SignUpDialog />
       <WelcomeDialog />

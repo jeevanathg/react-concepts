@@ -36,7 +36,6 @@ class Clock extends Component {
   render() {
     return (
       <div>
-        <hr />
         <h3>5.State and LifeCycle: Clock Example</h3>
         <p>{this.state.date.toLocaleTimeString()}</p>
         <button onClick={() => this.toggleClock()}>

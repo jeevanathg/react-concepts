@@ -16,9 +16,7 @@ class HandlingEvents extends Component {
   render() {
     return (
       <div>
-        <hr />
         <h3>6. HandlingEvents</h3>
-
         <Clock />
       </div>
     );
