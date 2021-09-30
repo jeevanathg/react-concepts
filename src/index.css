@@ -3,16 +3,16 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif; 
 }
 
 /* style the header */
 header {
-  background: #666;
+  background: #D6EAF8;
   padding: 30px;
   text-align: center;
   font-size: 20px;
-  color: white;
+  color: #2E86C1;
 }
 
 /* Container for flexboxes */
@@ -25,7 +25,7 @@ nav {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  background: #ccc;
+  background: #D6EAF8;
   padding: 20px;
 }
 /* Style the list inside the menu */
@@ -34,12 +34,17 @@ nav ul {
   padding: 0;
 }
 
+nav ul li a {
+  color : #2E86C1;
+  text-decoration:none
+}
+
 /* Style the content */
 article {
   -webkit-flex: 3;
   -ms-flex: 3;
   flex: 3;
-  background-color: #f1f1f1;
+  background-color: #fff;
   padding: 10px;
 }
 article h3 {
